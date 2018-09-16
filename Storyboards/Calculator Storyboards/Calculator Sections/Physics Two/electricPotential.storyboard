@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6X9-2u-bnU">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Light.otf">
+            <string>SFProText-Light</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Calculator Container View Controller-->
+        <scene sceneID="Lov-nl-CVo">
+            <objects>
+                <viewController id="6X9-2u-bnU" customClass="CalculatorContainerViewController" customModule="physicsApp5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q55-Ud-UJI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjX-i9-dNm">
+                                <rect key="frame" x="16" y="124" width="343" height="624"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHYSICS TWO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFE-rv-86J">
+                                <rect key="frame" x="73" y="62" width="229" height="42"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="35"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47338487689999997" green="0.47338487689999997" blue="0.47338487689999997" alpha="0.92206756160000003" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="L9x-iG-hYz" firstAttribute="trailing" secondItem="xjX-i9-dNm" secondAttribute="trailing" constant="16" id="1bF-aS-mWD"/>
+                            <constraint firstItem="qFE-rv-86J" firstAttribute="top" secondItem="L9x-iG-hYz" secondAttribute="top" constant="18" id="Dww-rQ-2ch"/>
+                            <constraint firstItem="qFE-rv-86J" firstAttribute="centerX" secondItem="q55-Ud-UJI" secondAttribute="centerX" id="ZTG-dv-bpi"/>
+                            <constraint firstItem="xjX-i9-dNm" firstAttribute="leading" secondItem="L9x-iG-hYz" secondAttribute="leading" constant="16" id="byw-Ho-hFs"/>
+                            <constraint firstItem="xjX-i9-dNm" firstAttribute="top" secondItem="L9x-iG-hYz" secondAttribute="top" constant="80" id="ufw-p3-QrL"/>
+                            <constraint firstItem="L9x-iG-hYz" firstAttribute="bottom" secondItem="xjX-i9-dNm" secondAttribute="bottom" constant="30" id="yno-Ac-4nE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L9x-iG-hYz"/>
+                    </view>
+                    <connections>
+                        <outlet property="calculatorContainerView" destination="xjX-i9-dNm" id="QDR-rK-CuR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1uF-Ba-loO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="182"/>
+        </scene>
+        <!--EpV1VC-->
+        <scene sceneID="tjH-yn-WQD">
+            <objects>
+                <viewController storyboardIdentifier="epV1VC" id="ZDb-tK-KIt" customClass="epV1VC" customModule="physicsApp5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7R-7g-qRR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V = PE / q" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-t9-WHG">
+                                <rect key="frame" x="111.33333333333333" y="56" width="153.33333333333337" height="44"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="37"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Potential Electric Field Str." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9BK-Dm-otq">
+                                <rect key="frame" x="40" y="124" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="CAp-Af-QQ1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Charge q (entire number)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eab-sX-Uuu">
+                                <rect key="frame" x="40" y="186" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="MAc-u9-Anf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cds-Iq-4F9">
+                                <rect key="frame" x="100" y="561" width="175" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="cDi-93-eNk"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FHY-uS-g2W">
+                                <rect key="frame" x="50" y="662" width="275" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="f5m-9g-vr2"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FHY-uS-g2W" firstAttribute="leading" secondItem="IXM-83-oRF" secondAttribute="leading" constant="50" id="1md-xP-lJZ"/>
+                            <constraint firstItem="IXM-83-oRF" firstAttribute="bottom" secondItem="FHY-uS-g2W" secondAttribute="bottom" constant="16" id="7uq-jz-Y7A"/>
+                            <constraint firstItem="9BK-Dm-otq" firstAttribute="top" secondItem="lVO-t9-WHG" secondAttribute="bottom" constant="24" id="FhX-PS-964"/>
+                            <constraint firstItem="lVO-t9-WHG" firstAttribute="top" secondItem="IXM-83-oRF" secondAttribute="top" constant="12" id="HW6-Dc-xyz"/>
+                            <constraint firstItem="eab-sX-Uuu" firstAttribute="top" secondItem="9BK-Dm-otq" secondAttribute="bottom" constant="32" id="IIq-an-a2I"/>
+                            <constraint firstItem="FHY-uS-g2W" firstAttribute="top" secondItem="cds-Iq-4F9" secondAttribute="bottom" constant="16" id="K2q-jA-PAn"/>
+                            <constraint firstItem="9BK-Dm-otq" firstAttribute="centerX" secondItem="e7R-7g-qRR" secondAttribute="centerX" id="KwK-3q-2jy"/>
+                            <constraint firstItem="FHY-uS-g2W" firstAttribute="centerX" secondItem="cds-Iq-4F9" secondAttribute="centerX" id="PGr-qC-o01"/>
+                            <constraint firstItem="FHY-uS-g2W" firstAttribute="centerX" secondItem="e7R-7g-qRR" secondAttribute="centerX" id="QbK-tw-887"/>
+                            <constraint firstItem="eab-sX-Uuu" firstAttribute="centerX" secondItem="e7R-7g-qRR" secondAttribute="centerX" id="RoC-GO-fZz"/>
+                            <constraint firstItem="cds-Iq-4F9" firstAttribute="leading" secondItem="IXM-83-oRF" secondAttribute="leading" constant="100" id="jhJ-N1-Hrf"/>
+                            <constraint firstItem="FHY-uS-g2W" firstAttribute="centerX" secondItem="cds-Iq-4F9" secondAttribute="centerX" id="qkh-M7-Im6"/>
+                            <constraint firstItem="FHY-uS-g2W" firstAttribute="top" secondItem="cds-Iq-4F9" secondAttribute="bottom" constant="16" id="tdN-eu-eDg"/>
+                            <constraint firstItem="cds-Iq-4F9" firstAttribute="centerX" secondItem="e7R-7g-qRR" secondAttribute="centerX" id="vbj-x0-3UP"/>
+                            <constraint firstItem="lVO-t9-WHG" firstAttribute="centerX" secondItem="e7R-7g-qRR" secondAttribute="centerX" id="vdK-gg-sCD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IXM-83-oRF"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerBox" destination="cds-Iq-4F9" id="wnW-rT-ngl"/>
+                        <outlet property="chargeTF" destination="eab-sX-Uuu" id="iHb-Ql-dj3"/>
+                        <outlet property="peTF" destination="9BK-Dm-otq" id="PVg-u8-K6j"/>
+                        <outlet property="setUpBox" destination="FHY-uS-g2W" id="PBH-PM-aHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsc-Xt-ZWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="181"/>
+        </scene>
+        <!--EpPEVC-->
+        <scene sceneID="wsQ-pG-sHc">
+            <objects>
+                <viewController storyboardIdentifier="epPEVC" id="VCe-Na-wRp" customClass="epPEVC" customModule="physicsApp5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xtD-yx-bmN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ΔPE = q *  ΔV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-Sq-4td">
+                                <rect key="frame" x="82.333333333333329" y="56" width="211.66666666666669" height="44"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="37"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Charge q (entire number)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4d4-LO-ir7">
+                                <rect key="frame" x="40" y="124" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="TPn-kR-Otr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Change in Voltage ΔV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DIU-8S-XJH">
+                                <rect key="frame" x="40" y="186" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="ZNL-Wn-28Q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iJv-2N-pwb">
+                                <rect key="frame" x="100" y="561" width="175" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="FGN-yc-Adq"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-H8-se6">
+                                <rect key="frame" x="50" y="662" width="275" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QNv-dE-fsG"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DIU-8S-XJH" firstAttribute="centerX" secondItem="xtD-yx-bmN" secondAttribute="centerX" id="7Wi-9X-APe"/>
+                            <constraint firstItem="dhl-H8-se6" firstAttribute="leading" secondItem="RaJ-AQ-3hf" secondAttribute="leading" constant="50" id="7am-zK-WxV"/>
+                            <constraint firstItem="dhl-H8-se6" firstAttribute="top" secondItem="iJv-2N-pwb" secondAttribute="bottom" constant="16" id="8JZ-6U-HH9"/>
+                            <constraint firstItem="dhl-H8-se6" firstAttribute="centerX" secondItem="iJv-2N-pwb" secondAttribute="centerX" id="Lwx-Mu-6vk"/>
+                            <constraint firstItem="iJv-2N-pwb" firstAttribute="centerX" secondItem="dhl-H8-se6" secondAttribute="centerX" id="OKJ-5S-Ndi"/>
+                            <constraint firstItem="4d4-LO-ir7" firstAttribute="top" secondItem="Pi8-Sq-4td" secondAttribute="bottom" constant="24" id="Zlu-W5-kTp"/>
+                            <constraint firstItem="Pi8-Sq-4td" firstAttribute="centerX" secondItem="xtD-yx-bmN" secondAttribute="centerX" id="bDr-vf-VDh"/>
+                            <constraint firstItem="dhl-H8-se6" firstAttribute="top" secondItem="iJv-2N-pwb" secondAttribute="bottom" constant="16" id="eCa-l4-ldh"/>
+                            <constraint firstItem="dhl-H8-se6" firstAttribute="centerX" secondItem="xtD-yx-bmN" secondAttribute="centerX" id="fbm-OM-4AQ"/>
+                            <constraint firstItem="Pi8-Sq-4td" firstAttribute="top" secondItem="RaJ-AQ-3hf" secondAttribute="top" constant="12" id="odq-Zv-t3m"/>
+                            <constraint firstItem="iJv-2N-pwb" firstAttribute="centerX" secondItem="xtD-yx-bmN" secondAttribute="centerX" id="pvw-2t-s6p"/>
+                            <constraint firstItem="4d4-LO-ir7" firstAttribute="centerX" secondItem="xtD-yx-bmN" secondAttribute="centerX" id="s7X-Fk-j1V"/>
+                            <constraint firstItem="DIU-8S-XJH" firstAttribute="top" secondItem="4d4-LO-ir7" secondAttribute="bottom" constant="32" id="uIE-cg-mKO"/>
+                            <constraint firstItem="RaJ-AQ-3hf" firstAttribute="bottom" secondItem="dhl-H8-se6" secondAttribute="bottom" constant="16" id="vnj-2B-O0y"/>
+                            <constraint firstItem="iJv-2N-pwb" firstAttribute="leading" secondItem="RaJ-AQ-3hf" secondAttribute="leading" constant="100" id="xYH-Mj-ELg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RaJ-AQ-3hf"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerBox" destination="iJv-2N-pwb" id="brf-Bg-gBJ"/>
+                        <outlet property="chargeTF" destination="4d4-LO-ir7" id="CBL-Tn-TWR"/>
+                        <outlet property="setUpBox" destination="dhl-H8-se6" id="xvd-3Q-Rj7"/>
+                        <outlet property="voltageTF" destination="DIU-8S-XJH" id="R17-if-JxZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zD-aO-HRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="182"/>
+        </scene>
+        <!--EpV2VC-->
+        <scene sceneID="LQC-QI-TYf">
+            <objects>
+                <viewController storyboardIdentifier="epV2VC" id="jUC-FS-w6U" customClass="epV2VC" customModule="physicsApp5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AUF-tp-YSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V = (k * Q) / r" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSP-47-Tcz">
+                                <rect key="frame" x="72.000000000000014" y="56" width="231.33333333333337" height="51"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="42"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Electrostatic Constant k" borderStyle="roundedRect" placeholder="Initial Velocity v(i)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRl-fu-wYq">
+                                <rect key="frame" x="40" y="131" width="295" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="G1s-fB-oiQ"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Charge Q (entire number)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v98-jr-yXv">
+                                <rect key="frame" x="40" y="185" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="nsk-fa-NSq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Distance between Charges r" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CpG-Fz-XTG">
+                                <rect key="frame" x="40" y="239" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="xbs-ku-doA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1rA-2S-cwQ">
+                                <rect key="frame" x="85" y="561" width="205" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="b09-p7-BrP"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mwg-tD-Ijm">
+                                <rect key="frame" x="35" y="662" width="305" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="z7D-uX-C0C"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CpG-Fz-XTG" firstAttribute="top" secondItem="v98-jr-yXv" secondAttribute="bottom" constant="24" id="05g-WX-Pyi"/>
+                            <constraint firstItem="t0x-La-7KW" firstAttribute="bottom" secondItem="mwg-tD-Ijm" secondAttribute="bottom" constant="16" id="0E5-f1-maZ"/>
+                            <constraint firstItem="TSP-47-Tcz" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="3RH-8T-U8U"/>
+                            <constraint firstItem="1rA-2S-cwQ" firstAttribute="centerX" secondItem="mwg-tD-Ijm" secondAttribute="centerX" id="4UY-eU-098"/>
+                            <constraint firstItem="CpG-Fz-XTG" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="8vH-T5-AcC"/>
+                            <constraint firstItem="1rA-2S-cwQ" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="9AY-ay-LoW"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="ATu-Eq-myS"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="centerX" secondItem="1rA-2S-cwQ" secondAttribute="centerX" id="Bow-Ne-6wk"/>
+                            <constraint firstItem="CpG-Fz-XTG" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="CBi-ej-vj3"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="centerX" secondItem="1rA-2S-cwQ" secondAttribute="centerX" id="CWy-jp-o8q"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="top" secondItem="1rA-2S-cwQ" secondAttribute="bottom" constant="16" id="DT8-Uw-Qnb"/>
+                            <constraint firstItem="hRl-fu-wYq" firstAttribute="top" secondItem="TSP-47-Tcz" secondAttribute="bottom" constant="24" id="GGf-8b-un5"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="centerX" secondItem="1rA-2S-cwQ" secondAttribute="centerX" id="KaO-vm-TT7"/>
+                            <constraint firstItem="v98-jr-yXv" firstAttribute="top" secondItem="hRl-fu-wYq" secondAttribute="bottom" constant="24" id="NrQ-9X-h9F"/>
+                            <constraint firstItem="TSP-47-Tcz" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="PsD-xe-afv"/>
+                            <constraint firstItem="TSP-47-Tcz" firstAttribute="top" secondItem="t0x-La-7KW" secondAttribute="top" constant="12" id="QRU-md-Z6j"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="top" secondItem="1rA-2S-cwQ" secondAttribute="bottom" constant="16" id="RBd-AU-kHa"/>
+                            <constraint firstItem="v98-jr-yXv" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="T9o-ta-Pz3"/>
+                            <constraint firstItem="1rA-2S-cwQ" firstAttribute="centerX" secondItem="mwg-tD-Ijm" secondAttribute="centerX" id="Usm-p8-4Ht"/>
+                            <constraint firstItem="hRl-fu-wYq" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="ZyD-8H-y7l"/>
+                            <constraint firstItem="1rA-2S-cwQ" firstAttribute="leading" secondItem="t0x-La-7KW" secondAttribute="leading" constant="85" id="cWB-WW-KwM"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="i1z-Zl-Eru"/>
+                            <constraint firstItem="hRl-fu-wYq" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="kPD-3s-Cxu"/>
+                            <constraint firstItem="mwg-tD-Ijm" firstAttribute="leading" secondItem="t0x-La-7KW" secondAttribute="leading" constant="35" id="t8K-eI-CGq"/>
+                            <constraint firstItem="v98-jr-yXv" firstAttribute="centerX" secondItem="AUF-tp-YSh" secondAttribute="centerX" id="uGH-qs-pj6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t0x-La-7KW"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerBox" destination="1rA-2S-cwQ" id="hQv-ls-4yE"/>
+                        <outlet property="chargeTF" destination="v98-jr-yXv" id="dg2-Ug-8Tp"/>
+                        <outlet property="distanceTF" destination="CpG-Fz-XTG" id="aYX-UR-ewI"/>
+                        <outlet property="setUpBox" destination="mwg-tD-Ijm" id="GST-mZ-zAy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVv-na-rvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="855"/>
+        </scene>
+        <!--EpC1VC-->
+        <scene sceneID="hgm-by-sls">
+            <objects>
+                <viewController storyboardIdentifier="epC1VC" id="j2K-8Q-6cf" customClass="epC1VC" customModule="physicsApp5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f2b-6c-ttb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C = Q / V" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POL-YL-v8E">
+                                <rect key="frame" x="116.66666666666669" y="56" width="143" height="44"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="37"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Charge Q (entire numer)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q7y-Iq-xL8">
+                                <rect key="frame" x="40" y="124" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="HbS-hx-CM5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Voltage V" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPM-uX-4VC">
+                                <rect key="frame" x="40" y="186" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="BAx-0v-DRg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gXz-GD-1SV">
+                                <rect key="frame" x="100" y="561" width="175" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="F3s-wY-jCG"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yON-GT-SnZ">
+                                <rect key="frame" x="50" y="662" width="275" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Cpy-eQ-XIL"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OUR-kV-GbK" firstAttribute="bottom" secondItem="yON-GT-SnZ" secondAttribute="bottom" constant="16" id="31s-ze-bDz"/>
+                            <constraint firstItem="SPM-uX-4VC" firstAttribute="centerX" secondItem="f2b-6c-ttb" secondAttribute="centerX" id="9sg-wH-Zi2"/>
+                            <constraint firstItem="yON-GT-SnZ" firstAttribute="leading" secondItem="OUR-kV-GbK" secondAttribute="leading" constant="50" id="FEY-Is-dL1"/>
+                            <constraint firstItem="POL-YL-v8E" firstAttribute="top" secondItem="OUR-kV-GbK" secondAttribute="top" constant="12" id="JaE-bj-aeX"/>
+                            <constraint firstItem="yON-GT-SnZ" firstAttribute="centerX" secondItem="gXz-GD-1SV" secondAttribute="centerX" id="KqS-tf-xF1"/>
+                            <constraint firstItem="POL-YL-v8E" firstAttribute="centerX" secondItem="f2b-6c-ttb" secondAttribute="centerX" id="LLd-Iv-FhH"/>
+                            <constraint firstItem="SPM-uX-4VC" firstAttribute="top" secondItem="q7y-Iq-xL8" secondAttribute="bottom" constant="32" id="XJw-T9-y7K"/>
+                            <constraint firstItem="gXz-GD-1SV" firstAttribute="leading" secondItem="OUR-kV-GbK" secondAttribute="leading" constant="100" id="dv1-TP-GjZ"/>
+                            <constraint firstItem="gXz-GD-1SV" firstAttribute="centerX" secondItem="f2b-6c-ttb" secondAttribute="centerX" id="f34-Uc-lHX"/>
+                            <constraint firstItem="yON-GT-SnZ" firstAttribute="centerX" secondItem="gXz-GD-1SV" secondAttribute="centerX" id="jCu-on-sFI"/>
+                            <constraint firstItem="yON-GT-SnZ" firstAttribute="centerX" secondItem="f2b-6c-ttb" secondAttribute="centerX" id="ja6-CA-BRf"/>
+                            <constraint firstItem="q7y-Iq-xL8" firstAttribute="top" secondItem="POL-YL-v8E" secondAttribute="bottom" constant="24" id="qaz-Jv-Oke"/>
+                            <constraint firstItem="q7y-Iq-xL8" firstAttribute="centerX" secondItem="f2b-6c-ttb" secondAttribute="centerX" id="t0l-X2-PdW"/>
+                            <constraint firstItem="yON-GT-SnZ" firstAttribute="top" secondItem="gXz-GD-1SV" secondAttribute="bottom" constant="16" id="uPV-mQ-nDG"/>
+                            <constraint firstItem="yON-GT-SnZ" firstAttribute="top" secondItem="gXz-GD-1SV" secondAttribute="bottom" constant="16" id="wf4-J0-ZqI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OUR-kV-GbK"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerBox" destination="gXz-GD-1SV" id="4ps-7Z-AwH"/>
+                        <outlet property="chargeTF" destination="q7y-Iq-xL8" id="Mdi-KK-tAt"/>
+                        <outlet property="setUpBox" destination="yON-GT-SnZ" id="TND-I1-0NA"/>
+                        <outlet property="voltageTF" destination="SPM-uX-4VC" id="C0u-O8-fYH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfV-wC-Sdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="854"/>
+        </scene>
+        <!--EpC2VC-->
+        <scene sceneID="8Uw-p8-7Gh">
+            <objects>
+                <viewController storyboardIdentifier="epC2VC" id="plM-ES-Gme" customClass="epC2VC" customModule="physicsApp5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7aF-He-mbs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C = k(eo) * (A / d)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBh-4a-ux7">
+                                <rect key="frame" x="31" y="56" width="313" height="51"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="42"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Constant k(eo)" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tn9-aT-PBy">
+                                <rect key="frame" x="40" y="131" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="CCF-5S-6nH"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Area A" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ch-u5-6LF">
+                                <rect key="frame" x="40" y="185" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="ddZ-Fl-poJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Diameter d" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPL-FB-VV6">
+                                <rect key="frame" x="40" y="239" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="Ywh-sN-TRn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="l8r-Bt-RQm">
+                                <rect key="frame" x="100" y="561" width="175" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="GyG-iE-Eny"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1AE-4l-72g">
+                                <rect key="frame" x="50" y="662" width="275" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="I3n-eW-Kic"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l8r-Bt-RQm" firstAttribute="centerX" secondItem="1AE-4l-72g" secondAttribute="centerX" id="33W-yj-cNA"/>
+                            <constraint firstItem="1AE-4l-72g" firstAttribute="top" secondItem="l8r-Bt-RQm" secondAttribute="bottom" constant="16" id="3IR-r8-L8b"/>
+                            <constraint firstItem="yPL-FB-VV6" firstAttribute="centerX" secondItem="7aF-He-mbs" secondAttribute="centerX" id="8W0-Ox-meV"/>
+                            <constraint firstItem="DBh-4a-ux7" firstAttribute="top" secondItem="yMG-Mb-e7K" secondAttribute="top" constant="12" id="CzD-w5-SMC"/>
+                            <constraint firstItem="yMG-Mb-e7K" firstAttribute="bottom" secondItem="1AE-4l-72g" secondAttribute="bottom" constant="16" id="DNa-e8-sd9"/>
+                            <constraint firstItem="1AE-4l-72g" firstAttribute="centerX" secondItem="l8r-Bt-RQm" secondAttribute="centerX" id="Fwn-TF-U6m"/>
+                            <constraint firstItem="1AE-4l-72g" firstAttribute="top" secondItem="l8r-Bt-RQm" secondAttribute="bottom" constant="16" id="KCW-Zq-GYS"/>
+                            <constraint firstItem="6Ch-u5-6LF" firstAttribute="centerX" secondItem="7aF-He-mbs" secondAttribute="centerX" id="L9M-9b-wxV"/>
+                            <constraint firstItem="yPL-FB-VV6" firstAttribute="top" secondItem="6Ch-u5-6LF" secondAttribute="bottom" constant="24" id="P9D-Bx-EgW"/>
+                            <constraint firstItem="l8r-Bt-RQm" firstAttribute="centerX" secondItem="1AE-4l-72g" secondAttribute="centerX" id="Sib-7f-3nP"/>
+                            <constraint firstItem="6Ch-u5-6LF" firstAttribute="top" secondItem="tn9-aT-PBy" secondAttribute="bottom" constant="24" id="UNy-Pv-8eR"/>
+                            <constraint firstItem="l8r-Bt-RQm" firstAttribute="leading" secondItem="yMG-Mb-e7K" secondAttribute="leading" constant="100" id="XEf-Aj-tvH"/>
+                            <constraint firstItem="l8r-Bt-RQm" firstAttribute="centerX" secondItem="7aF-He-mbs" secondAttribute="centerX" id="a2g-xR-8Tu"/>
+                            <constraint firstItem="1AE-4l-72g" firstAttribute="centerX" secondItem="7aF-He-mbs" secondAttribute="centerX" id="ajh-2q-KpU"/>
+                            <constraint firstItem="1AE-4l-72g" firstAttribute="centerX" secondItem="l8r-Bt-RQm" secondAttribute="centerX" id="aqY-OU-Cgp"/>
+                            <constraint firstItem="tn9-aT-PBy" firstAttribute="centerX" secondItem="7aF-He-mbs" secondAttribute="centerX" id="fdY-7r-L4e"/>
+                            <constraint firstItem="1AE-4l-72g" firstAttribute="leading" secondItem="yMG-Mb-e7K" secondAttribute="leading" constant="50" id="h8K-Wq-jKu"/>
+                            <constraint firstItem="DBh-4a-ux7" firstAttribute="centerX" secondItem="7aF-He-mbs" secondAttribute="centerX" id="l2d-Zg-1o2"/>
+                            <constraint firstItem="tn9-aT-PBy" firstAttribute="top" secondItem="DBh-4a-ux7" secondAttribute="bottom" constant="24" id="qPL-7k-rAL"/>
+                            <constraint firstItem="1AE-4l-72g" firstAttribute="centerX" secondItem="l8r-Bt-RQm" secondAttribute="centerX" id="zAa-Cb-yu3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yMG-Mb-e7K"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerBox" destination="l8r-Bt-RQm" id="Zbc-sZ-GbU"/>
+                        <outlet property="areaTF" destination="6Ch-u5-6LF" id="tLm-eu-iLn"/>
+                        <outlet property="diameterTF" destination="yPL-FB-VV6" id="Cfu-hQ-fH2"/>
+                        <outlet property="setUpBox" destination="1AE-4l-72g" id="duO-DB-IAO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8XD-WG-hSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="853"/>
+        </scene>
+        <!--EpEVC-->
+        <scene sceneID="1cw-AX-20t">
+            <objects>
+                <viewController storyboardIdentifier="epEVC" id="nKz-Wz-CgG" customClass="epEVC" customModule="physicsApp5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4KR-zU-TQ0" customClass="ep">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E = ( Q * V ) / 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fJ-Ny-6vh">
+                                <rect key="frame" x="72" y="56" width="230" height="44"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="37"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Charge Q (entire number)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0II-fM-nHw">
+                                <rect key="frame" x="40" y="124" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="pFx-M4-DcT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Voltage V" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qak-un-nHa">
+                                <rect key="frame" x="40" y="186" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="2Go-dE-ydf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xv4-qP-rl9">
+                                <rect key="frame" x="100" y="561" width="175" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="9JE-GU-ZNk"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-IH-m9h">
+                                <rect key="frame" x="50" y="662" width="275" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ne8-YJ-15t"/>
+                                </constraints>
+                                <color key="textColor" red="0.83529411760000005" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xv4-qP-rl9" firstAttribute="centerX" secondItem="4KR-zU-TQ0" secondAttribute="centerX" id="7tq-ny-h4X"/>
+                            <constraint firstItem="7fJ-Ny-6vh" firstAttribute="centerX" secondItem="4KR-zU-TQ0" secondAttribute="centerX" id="83T-VA-mN7"/>
+                            <constraint firstItem="fg2-IH-m9h" firstAttribute="top" secondItem="xv4-qP-rl9" secondAttribute="bottom" constant="16" id="AhR-UK-p01"/>
+                            <constraint firstItem="fg2-IH-m9h" firstAttribute="centerX" secondItem="xv4-qP-rl9" secondAttribute="centerX" id="DDM-U7-NlY"/>
+                            <constraint firstItem="0II-fM-nHw" firstAttribute="top" secondItem="7fJ-Ny-6vh" secondAttribute="bottom" constant="24" id="Do3-bS-wbf"/>
+                            <constraint firstItem="0II-fM-nHw" firstAttribute="centerX" secondItem="4KR-zU-TQ0" secondAttribute="centerX" id="PsN-my-4T5"/>
+                            <constraint firstItem="xv4-qP-rl9" firstAttribute="leading" secondItem="Z01-3u-bte" secondAttribute="leading" constant="100" id="X6r-iC-fjY"/>
+                            <constraint firstItem="fg2-IH-m9h" firstAttribute="top" secondItem="xv4-qP-rl9" secondAttribute="bottom" constant="16" id="Z5F-tc-Ehc"/>
+                            <constraint firstItem="7fJ-Ny-6vh" firstAttribute="top" secondItem="Z01-3u-bte" secondAttribute="top" constant="12" id="ZCA-uS-x7M"/>
+                            <constraint firstItem="qak-un-nHa" firstAttribute="centerX" secondItem="4KR-zU-TQ0" secondAttribute="centerX" id="gP9-NS-zdP"/>
+                            <constraint firstItem="Z01-3u-bte" firstAttribute="bottom" secondItem="fg2-IH-m9h" secondAttribute="bottom" constant="16" id="jdn-Rd-Mpm"/>
+                            <constraint firstItem="fg2-IH-m9h" firstAttribute="leading" secondItem="Z01-3u-bte" secondAttribute="leading" constant="50" id="ml3-EU-gzF"/>
+                            <constraint firstItem="fg2-IH-m9h" firstAttribute="centerX" secondItem="xv4-qP-rl9" secondAttribute="centerX" id="pCX-1R-8ED"/>
+                            <constraint firstItem="qak-un-nHa" firstAttribute="top" secondItem="0II-fM-nHw" secondAttribute="bottom" constant="32" id="ujV-hR-TWw"/>
+                            <constraint firstItem="fg2-IH-m9h" firstAttribute="centerX" secondItem="4KR-zU-TQ0" secondAttribute="centerX" id="zjU-bP-O4Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z01-3u-bte"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerBox" destination="xv4-qP-rl9" id="35v-9r-ihn"/>
+                        <outlet property="chargeTF" destination="0II-fM-nHw" id="wSE-Ky-9j6"/>
+                        <outlet property="setUpBox" destination="fg2-IH-m9h" id="Vnp-2l-DBL"/>
+                        <outlet property="voltage" destination="qak-un-nHa" id="uLB-pP-Y53"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RbY-bi-yB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="1531"/>
+        </scene>
+    </scenes>
+</document>
